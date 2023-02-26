@@ -17,19 +17,19 @@ type English struct {}
 func (m Japanese) Hello(name string) (string, error) {
 	if name == "" { return "", errors.New("Name naiyo") }
 
-	return fmt.Sprintf("Konichiwa %s!", name), nil
+	return fmt.Sprintf("Konichiwa %s!?", name), nil
 }
 func (m English) Hello(name string) (string, error) {
 	if name == "" { return "", errors.New("Name is empty") }
-	return fmt.Sprintf("Hello %s!", name), nil
+	return fmt.Sprintf("Hello %s!?", name), nil
 }
 func (m Japanese) Thankyou(name string) (string , error){
 	if name == "" { return "", errors.New("Name naiyo") }
-	return fmt.Sprintf("Arigato %s!", name), nil
+	return fmt.Sprintf("Arigato %s!?", name), nil
 }
 func (m English) Thankyou(name string) (string, error)  {
 	if name == "" { return "", errors.New("Name is empty") }
-	return fmt.Sprintf("Thank you, %s!", name), nil
+	return fmt.Sprintf("Thank you, %s!?", name), nil
 }
 
 /*
